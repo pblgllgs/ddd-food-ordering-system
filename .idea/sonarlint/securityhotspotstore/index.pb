@@ -20,3 +20,19 @@ W
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+L
+common/common-domain/pom.xml,3\e\3ebe72cff67b25b3f376cc963b57146cc5d43487
+>
+common/pom.xml,4\8\488bdbea7e8b73c44bd2a54e63f6012f10969196
+v
+Fcommon/common-domain/src/main/java/com/pblgllgs/event/DomainEvent.java,7\7\77647287649d692f4fb4b9c682e5505203515158
+«
+{order-service/order-domain/order-domain-core/src/main/java/com/pblgllgs/order/service/domain/valueobject/StreetAddress.java,b\f\bf19cea57acf4bab48b9ef6193a7536020ba3e80
+ž
+norder-service/order-domain/order-domain-core/src/main/java/com/pblgllgs/order/service/domain/entity/Order.java,0\b\0bba7ea1731a2d4ff6c93974a4f546a65ee35e37
+©
+yorder-service/order-domain/order-domain-core/src/main/java/com/pblgllgs/order/service/domain/valueobject/OrderItemId.java,1\b\1b829d2a30ad2a4ec24555ee7d041eafed6e4020
+ 
+porder-service/order-domain/order-domain-core/src/main/java/com/pblgllgs/order/service/domain/entity/Product.java,1\1\119b6294a3db5a51a2581e52046603bc1714fc7c
+¢
+rorder-service/order-domain/order-domain-core/src/main/java/com/pblgllgs/order/service/domain/entity/OrderItem.java,8\4\84154d78b21a02b5718d44c152939bedb68eda3d
