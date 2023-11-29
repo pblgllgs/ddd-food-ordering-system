@@ -20,6 +20,10 @@ public class Restaurant extends AggregateRoot<RestaurantId> {
         return products;
     }
 
+    public static Builder builder() {
+        return new Builder();
+    }
+
     public boolean isActive() {
         return active;
     }
@@ -30,10 +34,6 @@ public class Restaurant extends AggregateRoot<RestaurantId> {
         private boolean active;
 
         private Builder() {
-        }
-
-        public static Builder builder() {
-            return new Builder();
         }
 
         public Builder restaurantId(RestaurantId val) {
