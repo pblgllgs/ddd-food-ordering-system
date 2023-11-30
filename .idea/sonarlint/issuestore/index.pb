@@ -180,3 +180,9 @@ iinfrastructure/kafka/kafka-producer/src/main/java/com/pblgllgs/kafka/producer/i
 `infrastructure/kafka/kafka-consumer/src/main/java/com/pblgllgs/kafka/consumer/KafkaConsumer.java,6\f\6f94eca45835000de8990a7b7c0c464bb94204f3
 ù
 minfrastructure/kafka/kafka-consumer/src/main/java/com/pblgllgs/kafka/consumer/config/KafkaConsumerConfig.java,3\4\34f704e66ce9f4fe3d72d2ece353400db8fd8c23
+m
+=infrastructure/docker-compose/volumes/kafka/broker-1/test.txt,3\b\3b0310684623b28ea720b3b843480233b6261b19
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+[
++infrastructure/docker-compose/.env.template,b\9\b9709712cbe5b05caaaba6fd5129032d6dce2efe
