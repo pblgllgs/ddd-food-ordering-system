@@ -1,7 +1,7 @@
 start: zookeeper_start kafka_start
 	@echo Zookeeper and Kafka starting...
 
-stop: zookeeper_stop kafka_stop
+stop: zookeeper_stop kafka_stop init_data_delete
 	@echo Stop Zookeeper and Kafka cluster
 
 init:
@@ -28,3 +28,7 @@ kafka_stop:
 init_data:
 	@echo Data loader
 	docker compose -f .\common.yml -f .\init_kafka.yml up
+
+init_data_delete:
+	@echo Data loader
+	docker compose -f .\common.yml -f .\init_kafka.yml down
