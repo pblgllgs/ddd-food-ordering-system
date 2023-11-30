@@ -52,7 +52,7 @@ public class OrderCreateHelper {
         Order order = orderDataMapper.createOrderCommandToOrder(createOrderCommand);
         OrderCreatedEvent orderCreatedEvent = orderDomainService.validateAndInitiateOrder(order, restaurant);
         Order orderResult = saveOrder(order);
-        log.info("Order is created with id: {}", orderResult.getId());
+        log.info("Order is created with id: {}", orderResult.getId().getValue());
         return orderCreatedEvent;
     }
 
@@ -79,7 +79,7 @@ public class OrderCreateHelper {
         if (orderSaved == null) {
             throw new OrderDomainException("Couldn't save order!");
         }
-        log.info("Order is saved with id: {}", orderSaved.getId());
+        log.info("Order is saved with id: {}", orderSaved.getId().getValue());
         return orderSaved;
     }
 }

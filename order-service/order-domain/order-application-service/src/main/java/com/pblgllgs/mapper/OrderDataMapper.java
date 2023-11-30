@@ -9,6 +9,7 @@ package com.pblgllgs.mapper;
 import com.pblgllgs.dto.create.CreateOrderCommand;
 import com.pblgllgs.dto.create.CreateOrderResponse;
 import com.pblgllgs.dto.create.OrderAddress;
+import com.pblgllgs.dto.track.TrackOrderResponse;
 import com.pblgllgs.order.service.domain.entity.Order;
 import com.pblgllgs.order.service.domain.entity.OrderItem;
 import com.pblgllgs.order.service.domain.entity.Product;
@@ -47,10 +48,11 @@ public class OrderDataMapper {
                 .build();
     }
 
-    public CreateOrderResponse ordertoCreateOrderResponse(Order order){
+    public CreateOrderResponse ordertoCreateOrderResponse(Order order, String message){
         return CreateOrderResponse.builder()
                 .orderTrackingId(order.getTrackingId().getValue())
                 .orderStatus(order.getOrderStatus())
+                .message(message)
                 .build();
     }
 
@@ -65,6 +67,14 @@ public class OrderDataMapper {
                                 .subTotal(new Money(orderItem.getSubTotal()))
                                 .build()
                 ).collect(Collectors.toList());
+    }
+
+    public TrackOrderResponse orderToTrackOrderResponse(Order order){
+        return TrackOrderResponse.builder()
+                .orderStatus(order.getOrderStatus())
+                .orderTrackingId(order.getTrackingId().getValue())
+                .failureMessages(order.getFailureMessages())
+                .build();
     }
 
     private StreetAddress orderAddressToStreetAddress(OrderAddress orderAddress) {
