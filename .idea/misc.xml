@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" />
         <option value="$PROJECT_DIR$/order-service/order-messaging/pom.xml" />
         <option value="$PROJECT_DIR$/order-service/order-container/pom.xml" />
+        <option value="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/pom.xml" />
       </list>
     </option>
   </component>

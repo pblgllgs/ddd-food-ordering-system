@@ -1,0 +1,22 @@
+server:
+  port: 8184
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_food?currentSchema=customer&binaryTransfer=true&reWriteBatchedInserts=true&stringtype=unspecified
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
+    database: postgresql
+    open-in-view: false
+  sql:
+    init:
+      schema-locations: classpath:init-schema.sql
+      mode: always
+      data-locations: classpath:init-data.sql
